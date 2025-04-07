@@ -1,0 +1,29 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              ARR_DELAY   R-squared:                       0.998
+Model:                            OLS   Adj. R-squared:                  0.998
+Method:                 Least Squares   F-statistic:                 3.552e+07
+Date:                Sun, 06 Apr 2025   Prob (F-statistic):               0.00
+Time:                        21:38:40   Log-Likelihood:            -7.0722e+05
+No. Observations:              280295   AIC:                         1.414e+06
+Df Residuals:                  280289   BIC:                         1.415e+06
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+=======================================================================================
+                          coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+const                   0.1935      0.008     25.072      0.000       0.178       0.209
+DEP_DELAY               0.0275      0.000     90.958      0.000       0.027       0.028
+CARRIER_DELAY           0.9709      0.000   2910.488      0.000       0.970       0.972
+LATE_AIRCRAFT_DELAY     0.9704      0.000   2822.963      0.000       0.970       0.971
+WEATHER_DELAY           0.9721      0.000   2792.678      0.000       0.971       0.973
+NAS_DELAY               0.9796      0.000   3509.609      0.000       0.979       0.980
+==============================================================================
+Omnibus:                  1357235.047   Durbin-Watson:                   1.296
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):   32462815377854.117
+Skew:                         192.880   Prob(JB):                         0.00
+Kurtosis:                   52723.487   Cond. No.                         152.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
