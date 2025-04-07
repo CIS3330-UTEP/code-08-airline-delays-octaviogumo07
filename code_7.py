@@ -31,10 +31,10 @@ X = df_clean[predictors]
 y = df_clean['ARR_DELAY']
 
 #add constant for intercception
-x = sm.add_constant(X)    #generated with the help of AI
+x = sm.add_constant(X)   
 
 #fit linear regression model
-model = sm.OLS(y, X).fit()
+model = sm.OLS(y, X).fit()     #generated with the help of AI
 
 with open("predictive_model_summary.txt", "w") as f:  #generated with the help of AI
     f.write(str(model.summary()))    #generated witht he help of AI
