@@ -18,7 +18,7 @@ df_clean = df[delay_columns].dropna()
 #correlation heatmap
 plt.figure(figsize=(12,8))
 corr_matrix = df_clean.corr()
-sns.heatmap(corr_matrix, annot=True, fmt=".2f", cmap='coolwarm')
+sns.heatmap(corr_matrix, annot=True, fmt=".2f", cmap='coolwarm')      #generated with the help of AI
 plt.title("Correlation Matrix of Flight Delay Related Variables")
 plt.tight_layout()
 plt.savefig("descriptive_correlation_heatmap.png")
@@ -31,10 +31,12 @@ X = df_clean[predictors]
 y = df_clean['ARR_DELAY']
 
 #add constant for intercception
-x = sm.add_constant(X)
+x = sm.add_constant(X)    #generated with the help of AI
 
 #fit linear regression model
 model = sm.OLS(y, X).fit()
 
-with open("predictive_model_summary.txt", "w") as f:
-    f.write(str(model.summary()))
+with open("predictive_model_summary.txt", "w") as f:  #generated with the help of AI
+    f.write(str(model.summary()))    #generated witht he help of AI
+
+#This analysis was conducted with assistance from ChatGPT, an AI language model developed by OpenAI, for help with Python coding, data interpretation, and report structuring.
